@@ -1,6 +1,6 @@
 ## Mark April 16 2020, I started speed running the book.
 
-(TO-DO: Why I speed run this book?)
+(TO-DO: Why I speed run this book?)  
 ##Day 1
 ######Browser three bros: HTML JS CSS.  Browser three bros: HTML JS CSS.  
 ######   HTML is like the blueprint of DOM tree in browser. Note the DOM does not have to be 100% built like HTML.  
