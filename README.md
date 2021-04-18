@@ -1,3 +1,4 @@
+# Guys Welcome! This is the note I wrote when I speedrun the book!
 ## Mark April 16 2020, I started speed running the book.
 
 (TO-DO: Why I speed run this book?)  
