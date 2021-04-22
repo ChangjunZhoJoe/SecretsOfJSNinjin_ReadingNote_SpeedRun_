@@ -49,7 +49,7 @@ Took a 3 days break for final exams :>  I thought I could finish this book in a 
 ######   By var objBanana = new PenCup(); objBanana.prototype and PenCup.prototype refer to the same prototype in memory. 
 ######   You can change the prototype by just assigning it like objBanana.prototype = anotherPrototype. But it's stupid to do it.
 ######   I won't mention some practical pitfalls when using prototypes. Let's use them less, it's safer this way.
-######   Coming with ES6, class, inheritance are coming to js. They are all built with prototyping. We just lost another excuse to use a prototype! (I don't like prototyping, it's humanly-designed-complicated) 
-
+######   Coming with ES6, class, inheritance are coming to js. They are all built with prototyping. We just lost another excuse to use a prototype! (I don't like prototyping, it's humanly-designed-complicated). 
+######   Use Object.defineProperty(obj,propertyName, {specifications}) to define a property with certain rules like enumarable. writable etc. 
 
 
