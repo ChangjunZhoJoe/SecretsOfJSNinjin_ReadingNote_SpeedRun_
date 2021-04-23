@@ -53,3 +53,11 @@ Took a 3 days break for final exams :>  I thought I could finish this book in a 
 ######   Use Object.defineProperty(obj,propertyName, {specifications}) to define a property with certain rules like enumarable. writable etc. 
 
 
+## Day 5 Controlling access to objects --- Getter Setter Proxy
+######   You can use Getter and Setter to define the action when retrieve and modifying an 'object liked function'. 
+######   Use getter and setter with constructor function to mimic 'private' variables. 
+######   Proxy is a way to gain completely control over an object. Get, set and called(as a function) and more could be intercepted by proxy. 
+######   Proxy is much slower (dozens of times) than not using it.
+
+
+
