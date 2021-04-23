@@ -42,7 +42,7 @@ Took a 3 days break for final exams :>  I thought I could finish this book in a 
 ######   ES6 introduces async function(){ await another_func_name() }. It's like multiprocessing. Though js is a single thread language.
 ######   Good syntax sugar Promise Promise.all Promise.any catch. Remember them and you will use them. 
 
-## Day 4 prototyping and fake object oriented programming in javascript. 
+## Day 5 prototyping and fake object oriented programming in javascript. 
 ######   Prototype is like a parent blueprint.  
 ######   Prototypes come with any objects(functions). It's auto-attached to the object when it's created. 
 ######   By initializing obj with a new keyword. By var objBanana = new PenCup(); you initialize objBanana with everything from PenCup's prototype. 
@@ -53,7 +53,7 @@ Took a 3 days break for final exams :>  I thought I could finish this book in a 
 ######   Use Object.defineProperty(obj,propertyName, {specifications}) to define a property with certain rules like enumarable. writable etc. 
 
 
-## Day 5 Controlling access to objects --- Getter Setter Proxy
+## Day 6 Controlling access to objects --- Getter Setter Proxy
 ######   You can use Getter and Setter to define the action when retrieve and modifying an 'object liked function'. 
 ######   Use getter and setter with constructor function to mimic 'private' variables. 
 ######   Proxy is a way to gain completely control over an object. Get, set and called(as a function) and more could be intercepted by proxy. 
