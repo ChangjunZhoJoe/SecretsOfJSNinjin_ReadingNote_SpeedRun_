@@ -59,5 +59,58 @@ Took a 3 days break for final exams :>  I thought I could finish this book in a 
 ######   Proxy is a way to gain completely control over an object. Get, set and called(as a function) and more could be intercepted by proxy. 
 ######   Proxy is much slower (dozens of times) than not using it.
 
+## Day 7 Dealing with collections --- Array, Set, Map. 
+######   Arrays all has a length property and they all has Array.prototype as their prototype.
+######   To add/remove an element from an array, use push, pop and shift, unshft.
+######   There are lots of syntax sugars to deal with elements in a array, like .map .every .some .find .filter .sort .reduce. 
+######   When initialize map, do new Map(). {} is not a good way to do it because it has properties that weren't explicitly defined.
+######   You can simulate an array like object by using Array.prototype.push.call(,) to change the function context of costomized "push". 
+######   Cast an array to set by passing the array as an argument when initialize set. Ex. new Set("the array"). 
+######   Map is collection so it can be looped by for...of loop. 
+
+## Day 8 Regular expression
+######   Too much to go through and I learnt so little from this chapter. So I won't say too much. 
+######   Remember to use regular expression when you do string manipulation. It's a really powerful tool. 
+######   HTML parser heavily use regular expression. 
+
+## Day 8 Regular expression
+######   Too much to go through and I learnt so little from this chapter. So I won't say too much. 
+######   Remember to use regular expression when you do string manipulation. It's a really powerful tool. 
+######   HTML parser heavily use regular expression. 
+
+## Day 8 Modules
+######   Before ES6, it was chaos. AMD and commonJS were two popular modularization tool.
+######   In ES6, you use export and import. 
+
+## Day 8 Modules
+######   Before ES6, js has no built in module tools. AMD and commonJS were two popular module tools. 
+######   In ES6, you use export and import. ES6 module was built considering the advantages of both commonJS and AMD. 
+
+## Day 9 Working with DOM
+######   The book talked about HTML parser. I'm not interested. 
+######   Styling: Move <Style> before <script> because script may look for styles, if it has not been initialized it's gonna be bad. 
+######   Styling: When declare styles inside "". It goes like "font-size". But if you try to get an element's style. It will be .style.fontSize. 
+######   getComputedStyle(element) is a built in function that returns the final combination style of an element passed. 
+######   Style defined in <elementName style='..'> is gonna be considered first before styles inside <style>. 
+######   When compute height and width of an element. Sometimes height and width are not accurate. Try use offsetWidth and offsetHeight. 
+######   Trashing layouts: We better not mix the read (getEleByID) and write (ele.style=..). We should Batches all reads together and all writes together. To reduce the time-wasting "system-call" read and write times. 
+
+# Surviving events. ## --- My favourite part!
+#####   How task queue actually works: 
+######   There are MacroTasks(DOM manipulation, events) and MicroTasks(promises). The kenel does one MacroTasks, and then do all available MicroTasks. Then do the next MacroTasks and repeats. 
+######   The page get refreshed around every 14ms. Try minimize each task's time lower than this. If not, don't exceed too much cuase its gonna be laggy. 
+######   Use setTimeOut() to chunk large operation into smaller onces and execute them as lots of MacroTasks instead of one. 
+######   SetInterval() insert the task into MacroTask intime at every scheduled time if the previous SetInterval MacroTask is not in the task queue (has been processed already). 
+
+######   Every time a event happens, we need to find the elements that triggers the event from the DOM tree. It's called event propagation. But How? 
+######   (Event propagation) Two ways: event bubbling and event capturing. 
+######   Event bubbling start from the targeted element and goes up to find other elements. Event Capturing goes top down. 
+######   You can specify which way of propagation you want to use by putting true as the secon argument of addEventListener. Default is bubbling. 
+######   So mordern browsers uses both ways of event propagation. 
+######   Inside an event handler. 'This' refers to the element on which the event handler is registered. event.target refers to the element where the event is triggered on. 
+######   Custom event is a very powerful tool for loose coupling. It's really for writing better codes. Pls use it when you can. 
+
+Lastly, be careful when develop cross-brower websites. I think it's really hard to illustrate every details about this. Just learn while you go.
 
 
+ 
