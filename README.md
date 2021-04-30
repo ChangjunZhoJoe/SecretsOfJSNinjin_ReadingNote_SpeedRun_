@@ -96,7 +96,7 @@ Took a 3 days break for final exams :>  I thought I could finish this book in a 
 ######   When compute height and width of an element. Sometimes height and width are not accurate. Try use offsetWidth and offsetHeight. 
 ######   Trashing layouts: We better not mix the read (getEleByID) and write (ele.style=..). We should Batches all reads together and all writes together. To reduce the time-wasting "system-call" read and write times. 
 
-# Surviving events. ## --- My favourite part!
+# Day 9 Surviving events.  --- My favourite part!
 #####   How task queue actually works: 
 ######   There are MacroTasks(DOM manipulation, events) and MicroTasks(promises). The kenel does one MacroTasks, and then do all available MicroTasks. Then do the next MacroTasks and repeats. 
 ######   The page get refreshed around every 14ms. Try minimize each task's time lower than this. If not, don't exceed too much cuase its gonna be laggy. 
