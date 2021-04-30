@@ -1,4 +1,5 @@
-# 🎉 🍸 Guys Welcome! This is the note I wrote when I speedrun the book 'Secrets of the Javascript Ninja' 🎉 🍸
+# 🎉 🍸 Guys Welcome! 🎉 🍸
+This is the note I wrote when I speedrun the book 'Secrets of the Javascript Ninja'
 ## Mark April 16 2020, I started speed running the book.
 
 (TO-DO: Why do I speed run this book?)  
